@@ -1,0 +1,5 @@
+#!/bin/sh
+set -euxo pipefail
+# This may work in the future to auto-enroll secure boot keys..
+# https://www.freedesktop.org/software/systemd/man/systemd-boot.html
+echo "secure-boot-enroll force" >> /boot/loader/loader.conf
