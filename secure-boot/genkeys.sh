@@ -50,6 +50,7 @@ insert_keys () {
     # for auto enrollment using systemd-boot (not working yet)
     mkdir -p "${MKOSI_EXTRA}/boot/loader/keys/auto"
     cp ${PKI}/{PK,KEK,db}.cer "${MKOSI_EXTRA}/boot/loader/keys/auto"
+    cp ${PKI}/{MicWinProPCA2011_2011-10-19,MicCorUEFCA2011_2011-06-27,MicCorKEKCA2011_2011-06-24}.crt "${MKOSI_EXTRA}/boot/loader/keys/auto"
     cp ${PKI}/{PK,KEK,db}.esl "${MKOSI_EXTRA}/boot/loader/keys/auto"
     cp ${PKI}/{PK,KEK,db}.auth "${MKOSI_EXTRA}/boot/loader/keys/auto"
 
